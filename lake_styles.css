@@ -12,6 +12,69 @@
    Filename: lake_styles.css
 
 */
+/*I placed a linear gradient as my background image but I placed a color, the first color which fades into the second one.*/
 html {
-    background-color: rgb(235, 219, 219);
+    background-image: linear-gradient(#fcb563, #875049);
+}
+
+/*For the right comlumn, I seperated the h2 and paragraphs so they have a different type of style, placed a text shadow to make a shadow effect on the h2 element and I placed a background color on my right column but made it a little transparent and similar to the colors ive been using. The left comlumn is similar in text shadow. */
+section#rightcol h2 {
+    text-shadow: rgb(247, 105, 105) 2px 2px 2px;
+    font-family: cursive;
+
+}
+
+section#rightcol {
+    float: right;
+    color: rgb(34, 33, 53);
+    background-color: rgba(129, 80, 35, 0.281);
+}
+
+section#leftcol h2 {
+    text-shadow: rgb(247, 105, 105) 2px 2px 2px;
+    font-family: cursive;
+}
+
+/*For the nav, I made the anchor a child of the list which is a child of the unordered list thats a child of the nav so that it will inherit the text decoration and color. The link and visited changed what happens when you click on it but my code has no effect. When it is being hovered over, it only changed in color.*/
+nav>ul>li>a:link,
+nav>ul>li>a:visited {
+    color: rgb(31, 21, 21);
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+    text-decoration: none;
+    color: rgb(241, 222, 222);
+}
+
+/*The h1 is for the title that says "welcome" I centered it, and changed it in size and color to make it neater.*/
+h1 {
+    font-family: cursive;
+    text-align: center;
+    text-shadow: rgb(247, 105, 105) 2px 2px 2px;
+    font-size: 3em;
+}
+
+/*To specify the blockquote, I identified the right column and then placed an open and closed quote to clarify that it is a quote. Also, made the background color a little transparent in its color using the rgba.*/
+section#rightcol blockquote {
+    font-family: cursive;
+    background-color: rgba(241, 171, 113, 0.199);
+}
+
+
+section#rightcol blockquote:before {
+    content: open-quote;
+
+}
+
+section#rightcol blockquote:after {
+    content: close-quote;
+
+}
+
+/*For the footer, I only changed the color to something a little similar to the color i've been using and changed it in size so that it is more noticable.*/
+footer {
+    background-color: rgba(66, 43, 13, 0.295);
+    font-size: 1.5em;
 }
